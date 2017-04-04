@@ -1,0 +1,10 @@
+
+.file-upload{
+    width:  400px;
+    height: 500px;
+    background-color: #e0ebff;
+    left:40%;
+    top:20%;
+    position: absolute;
+    text-align: center;
+}

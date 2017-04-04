@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>This is the upload Page</title>
+    <link rel="stylesheet" href="/static/css/upload.css" />
 </head>
 <body>
-<form name="upload_form" id="upload_form" class="file-upload" enctype="multipart/form-data">
-    <p>上传文件:&nbsp;&nbsp;<input type="file" name="up_file" id="up_file" value="选择文件"></p>
-    <p>提交:&nbsp;&nbsp;<input type="submit" name="submit" id="submit" value="提交"></p>
-</form>
+<div class="upload_form">
+    <form name="upload_form" id="upload_form" class="file-upload" enctype="multipart/form-data" method="post" action="upload">
+        <p>文件描述：&nbsp;&nbsp;<input type="text" name="file_discribe" id="file_discribe" class="file_discribe"></p>
+        <p>上传文件:&nbsp;&nbsp;<input type="file" name="up_file" id="up_file" value="选择文件"></p>
+        <p><input type="submit" name="submit" id="submit" value="提交">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="reset" class="reset" value="重置"></p>
+    </form>
+</div>
 </body>
-<script type="text/javascript" src="/static/js/jquery-2.1.1.js"></script>
-<script type="text/javascript" src="/static/js/upload.js.js"></script>
+{#<script type="text/javascript" src="/static/js/jquery-2.1.1.js"></script>#}
+{#<script type="text/javascript" src="/static/js/upload.js"></script>#}
 </html>

@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+from webdisk import views as webdisk_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^upload$',webdisk_views.upload),
 ]
